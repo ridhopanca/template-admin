@@ -4,11 +4,11 @@ const closeBtn = document.querySelector("#close-btn");
 const themeToggler = document.querySelector(".theme-toggler");
 
 menuBtn.addEventListener('click', () => {
-    sideMenu.style.display = 'block';
+    sideMenu.classList.toggle('show');
 })
 
 closeBtn.addEventListener('click', () => {
-    sideMenu.style.display = 'none';
+    sideMenu.classList.toggle('show');
 })
 
 themeToggler.addEventListener('click', () => {

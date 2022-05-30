@@ -608,21 +608,18 @@ main .recent-orders a {
 
     aside {
         position: fixed;
-        left: -100%;
         width: 18rem;
+        transform: translateX(-18rem);
         background: var(--color-white);
         height: 100vh;
+        transition: all 400ms ease;
         z-index: 3;
         box-shadow: 1rem 3rem 4rem var(--color-light);
         padding-right: var(--card-padding);
-        display: none;
-        animation: showMenu 400ms ease forwards;
     }
 
-    @keyframes showMenu {
-        to {
-            left: 0;
-        }
+    aside.show {
+        transform: translateX(0);
     }
 
     aside .logo {
