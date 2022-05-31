@@ -25,6 +25,9 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
 /* DARK THEME VARIABLES  */
 
 .dark-theme-variables {
